@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REST N RUN</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="header-nav" aria-label="메인 메뉴">
+      <div class="header-menu header-menu--left">
+        <a href="#about">ABOUT</a>
+        <a href="#products">PRODUCTS</a>
+      </div>
+
+      <a href="#home" class="header-logo" aria-label="REST N RUN 홈으로 이동">
+        <img class="header-logo__image" id="headerLogo" src="./assets/images/logo-rest-n-run-w.png" alt="REST N RUN">
+      </a>
+
+      <div class="header-menu header-menu--right">
+        <a href="#process">PROCESS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+        MENU
+      </button>
+    </nav>
+
+    <nav class="mobile-menu" aria-label="모바일 메뉴">
+      <a href="#about">ABOUT</a>
+      <a href="#products">PRODUCTS</a>
+      <a href="#process">PROCESS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero" data-header-theme="light">
+      <div class="hero-overlay"></div>
+      <div class="scroll">스크롤<span></span></div>
+    </section>
+
+    <section id="about" class="about section-light" data-header-theme="dark">
+      <div class="container">
+        <div class="brand-story">
+          <div class="shade"></div>
+          <div class="brand-copy">
+            <small>BRAND STORY</small>
+            <p>Vision: 언제 어디서나 일상이 레스토랑이 되는 경험을 전 세계에 알리는 것</p>
+            <p>Mission: 식문화의 장벽을 넘어 세상 모든 식탁을 연결하고, 언제 어디서나 누릴 수 있는 레스토랑의 식문화를 제공합니다.</p>
+            <p>slogan: 우리는 고객에게 최고의 경험과 상품, 그리고 서비스를 제공합니다.</p>
+          </div>
+        </div>
+
+        <div class="venues">
+          <div class="intro-grid">
+            <img src="./assets/images/hospitality.jpg" alt="레스토랑 메뉴">
+            <h2>
+              <span>SINCE 2020</span><br>
+              우수한 호스피탈리티의 전통을 이어 갑니다.<br>
+              우리는 서비스, 디자인, 혁신, 그리고 경험에 주력하여<br>
+              세계적 수준의 다이닝 공간을 만듭니다.
+            </h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <div class="venue-copy">
+                <span>01.</span>
+                <h3>Fitzroy: Specialty Coffee & Antique Shop</h3>
+                <p>호주 멜버른의 감성을 담은 공간에서 즐기는 최상의 커피 경험.</p>
+              </div>
+              <img src="./assets/images/venue-fitzroy.jpg" alt="피츠로이">
+            </article>
+
+            <article>
+              <img src="./assets/images/venue-writers-block.jpg" alt="라이터스블럭">
+              <div class="venue-copy">
+                <span>02.</span>
+                <h3>Writer's Block: Australian Brunch Cafe</h3>
+                <p>신선한 식재료로 완성하는 건강하고 풍성한 호주식 브런치 테이블.</p>
+              </div>
+            </article>
+
+            <article>
+              <div class="venue-copy">
+                <span>03.</span>
+                <h3>REST N RUN</h3>
+                <p>일상의 쉼표가 되는 공간, REST N RUN의 철학이 집약된 플래그십 스토어.</p>
+              </div>
+              <img src="./assets/images/venue-rest-n-run.jpg" alt="레스트앤런">
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products" data-header-theme="light">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <small>컬렉션</small>
+            <h2>PRODUCT LINE-UP</h2>
+          </div>
+          <p>REST N RUN의 시그니처 제품들을 소개합니다.</p>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-tabs">
+            <button
+              type="button"
+              class="active"
+              data-img="./assets/images/product-tomato-relish.jpg"
+              data-visual-bg="#6f2f26"
+              data-section-bg="#160f0d"
+            >
+              Tomato Relish <b>→</b>
+            </button>
+            <button
+              type="button"
+              data-img="./assets/images/product-carrot-spread.jpg"
+              data-visual-bg="#8a4d27"
+              data-section-bg="#1b120c"
+            >
+              Carrot Spread <b>→</b>
+            </button>
+            <button
+              type="button"
+              data-img="./assets/images/product-cashew-spread.jpg"
+              data-visual-bg="#4b5038"
+              data-section-bg="#111311"
+            >
+              CashewNut Spread <b>→</b>
+            </button>
+          </div>
+
+          <div class="product-visual" id="productVisual">
+            <img id="productImage" src="./assets/images/product-cashew-spread.jpg" alt="CashewNut Spread 제품 이미지">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="process section-light" data-header-theme="dark">
+      <div class="container process-grid">
+        <img src="./assets/images/process.jpg" alt="제품 제작 공정">
+        <div>
+          <small>CRAFTSMANSHIP</small>
+          <h2>OUR<br>PROCESS</h2>
+          <p>REST N RUN의 제품은 수개월에 걸친 섬세한 연구와 전통적인 수작업 공정을 통해 탄생합니다. 우리는 최적의 산지에서 채취한 원료의 본연의 맛을 유지하기 위해 고유의 저온 숙성 기술과
+            장인의 감각을 결합합니다.</p>
+          <p>이 모든 과정은 투명하게 기록되며, 아티저널 엑설런스를 향한 우리의 고집스러운 여정을 보여줍니다.</p>
+          <a class="outline-btn" href="https://restnrun.notion.site/?source=copy_link">자세히 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" data-header-theme="dark">
+      <div class="container contact-grid">
+        <div>
+          <h2>CONTACT</h2>
+          <dl>
+            <dt>ADDRESS</dt>
+            <dd>제주시 동광로 13길 27, 레스트앤런</dd>
+
+            <dt>BUSINESS COLLABORATION</dt>
+            <dd><a href="mailto:restandrun.official@gmail.com">restandrun.official@gmail.com</a></dd>
+
+            <dt>FOLLOW</dt>
+            <dd class="social"><a href="https://www.instagram.com/restandrun.official/">INSTAGRAM</a><a href="https://www.youtube.com/@jisi1ver">YOUTUBE</a></dd>
+          </dl>
+        </div>
+
+        <form>
+          <label>이름<input name="name" required></label>
+          <div class="form-row">
+            <label>회사 이름<input name="company"></label>
+            <label>이메일<input type="email" name="email" required></label>
+          </div>
+          <label>문의 내역<textarea name="message" required></textarea></label>
+          <button type="submit">문의하기</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
