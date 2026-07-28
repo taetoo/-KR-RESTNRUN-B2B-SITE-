@@ -553,6 +553,12 @@ a {
   resize: none;
 }
 
+a.disabled-link {
+  pointer-events: none; /* 클릭 및 호버 등 마우스 이벤트 차단 */
+  text-decoration: underline; /* 밑줄 유지 */
+  color: inherit; /* 색상이 변하는 것을 막으려면 글자색 상속 */
+}
+
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -568,6 +574,81 @@ a {
   background: var(--ink);
   cursor: pointer;
 }
+/* Footer */
+.site-footer {
+  padding: 64px 0 40px;
+  color: var(--soft);
+  background: var(--ink);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 48px;
+  align-items: start;
+}
+
+.footer-logo {
+  display: block;
+  width: 110px;
+}
+
+.footer-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-info {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-info p {
+  margin: 0;
+  color: rgba(245, 243, 238, 0.72);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.footer-info a {
+  width: fit-content;
+  color: var(--soft);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-links a {
+  color: var(--soft);
+  font-family: var(--font-en);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  grid-column: 1 / -1;
+  margin: 40px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(245, 243, 238, 0.14);
+  color: rgba(245, 243, 238, 0.5);
+  font-family: var(--font-en);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+  
 
 @media (max-width: 800px) {
   .container {
@@ -740,5 +821,23 @@ a {
 
   .product-tabs button {
     font-size: 27px;
+  }
+
+  .site-footer {
+    padding: 48px 0 32px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+
+  .footer-copyright {
+    grid-column: auto;
+    margin-top: 12px;
   }
 }
